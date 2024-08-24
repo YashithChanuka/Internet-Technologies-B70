@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 04</title>
+    <style>
+      table,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 8px;
+      }
+      table {
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td colspan="4">Personal Information</td>
+      </tr>
+      <tr>
+        <td>Name :</td>
+        <td colspan="3">
+          <input type="text" placeholder="Name" />
+        </td>
+      </tr>
+      <tr>
+        <td>Age :</td>
+        <td colspan="3">
+          <input type="number" value="18" />
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="3">Address :</td>
+        <td>Street :</td>
+        <td colspan="2">
+          <input type="text" placeholder="Street" />
+        </td>
+      </tr>
+      <tr>
+        <td>City :</td>
+        <td colspan="2">
+          <input type="text" placeholder="City" />
+        </td>
+      </tr>
+      <tr>
+        <td>Zip Code :</td>
+        <td colspan="2">
+          <input type="text" placeholder="Zip Code" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">Additional Information</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <textarea name="message" id="message" cols="70" rows="5"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <button>Submit</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

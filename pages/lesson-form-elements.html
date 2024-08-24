@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - Form elements</title>
+  </head>
+  <body>
+    <h1>Form elements</h1>
+
+    <!-- label - This is used to define a label for an input -->
+    <strong>==== 1. label =====</strong>
+    <br />
+    <label for="username">User Name : </label>
+
+    <hr />
+    <br />
+
+    <!-- input - This is used to get input from the user -->
+    <!-- attributes:
+        * type - Specifies the type of input
+        * name - Defines the name of the input field for form submission.
+        * value - Specifies the initial value of the input
+        * placeholder - Specifies a short hint that describes the expected value of an input field
+        * required - Specifies that an input field must be filled out before submitting the form -->
+
+    <strong>===== 2. input =====</strong>
+    <br />
+    <p>----- Text input -----</p>
+    <label for="firstName">First Name : </label>
+    <input type="text" placeholder="Enter your first name" maxlength="5" />
+
+    <p>----- Number input -----</p>
+    <label for="age">Age : </label>
+    <input type="number" value="18" />
+
+    <p>----- Password input -----</p>
+    <label for="password">Password : </label>
+    <input type="password" />
+
+    <p>----- date input -----</p>
+    <label for="date">Date : </label>
+    <input type="date" />
+
+    <p>----- Radio button -----</p>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" />
+    <label for="female">Female</label>
+    <input type="radio" name="gender" />
+
+    <p>----- Checkbox -----</p>
+    <label for="remember">Remember Me</label>
+    <input type="checkbox" name="remember" />
+
+    <p>----- File upload -----</p>
+    <input type="file" name="file" />
+
+    <br />
+    <hr />
+    <!-- textarea - This is used for multi-line text input -->
+    <!-- attributes:
+        * rows - Specifies the number of visible text lines
+        * cols - Specifies the width of the text area
+        * placeholder - provides a hint of what to type in the textarea -->
+    <strong>==== 3. textarea ====</strong>
+    <br />
+    <textarea
+      name="message"
+      id="message"
+      placeholder="Enter your message here"
+      rows="4"
+      cols="30"
+    ></textarea>
+
+    <hr />
+    <br />
+
+    <!-- button -->
+    <strong>==== 4. button =====</strong>
+    <br />
+    <button type="button" onclick="alert('Hello World!')">Click Me</button>
+    <button type="submit">Submit</button>
+
+    <hr />
+    <!-- select -->
+    <strong>==== 5. select =====</strong>
+    <br />
+    <select name="technology" id="tech">
+      <option value="java">Java</option>
+      <option value="javascript">Javascript</option>
+      <option value="python">Python</option>
+    </select>
+
+    <hr />
+
+    <!-- fieldset and legend -->
+    <strong>==== 6. fieldset and legend ====</strong>
+    <br />
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" />
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" />
+    </fieldset>
+    <br />
+    <hr />
+    <!-- form - This is used to create a form for user inputs -->
+    <!-- attributes:
+        * action - Specifies where to send the form data
+        * method - Specifies the HTTP method to use when sending form data
+        * name - Specifies the name of the form
+        * id - Specifies the id of the form
+        * onsubmit - Specifies a script to be run when the form is submitted -->
+    <strong>==== 7. form ====</strong>
+    <br />
+
+    <form action="/submit-form" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <br />
+      <label for="Last Name">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
