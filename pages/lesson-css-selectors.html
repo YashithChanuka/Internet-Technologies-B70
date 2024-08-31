@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - CSS Selectors</title>
+    <style>
+      /* ==== Element selector ==== */
+      /* h2 {
+        color: red;
+      } */
+
+      /* ===== Class Selector ===== */
+      /* .heading {
+        color: blue;
+      } */
+
+      /* ===== ID Selector ===== */
+      /* #main-paragragh {
+        color: green;
+      } */
+
+      /* ===== Attribute Selector ===== */
+      /* a[target="_blank"] {
+        color: greenyellow;
+      } */
+
+      /* ===== Descendant Selector ===== */
+      /* div p {
+        font-style: italic;
+      } */
+
+      /* ===== Child Selector ===== */
+      /* ul > li {
+        list-style-type: square;
+      } */
+
+      /* ===== Adjacent Sibling Selector ===== */
+      /* h2 + p {
+        color: blue;
+      } */
+
+      /* ===== General Sibling Selector ===== */
+      /* h1 ~ p {
+        color: aqua;
+      } */
+
+      /* ===== Pseudo-class Selector ===== */
+      li:first-child {
+        color: red;
+      }
+
+      li:last-child {
+        color: blue;
+      }
+
+      li:nth-child(3) {
+        color: green;
+      }
+
+      /* li:nth-child(odd) {
+        color: red;
+      }
+
+      li:nth-child(even) {
+        color: green;
+      } */
+
+      ul:hover {
+        background-color: lightgray;
+      }
+
+      /* p:hover {
+        color: blue;
+      } */
+
+      /* ===== Pseudo-elements Selector ===== */
+      p::first-letter {
+        font-size: 32px;
+      }
+
+      p::first-line {
+        color: brown;
+      }
+
+      p::before {
+        content: "Before ";
+        color: blue;
+        background-color: aqua;
+      }
+
+      p::after {
+        content: "After::::";
+        color: green;
+      }
+
+      /* ===== Grouping Selector ===== */
+      h1,
+      h2,
+      h3 {
+        color: sandybrown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+
+    ===== 1. Element Selector ====
+    <!-- targets all instances of a specific HTML element -->
+    <h2>Hellow World!</h2>
+
+    ===== 2. Class Selector =====
+    <!-- - allows you to style elements that share the same class attribute. Classes can be reused across multiple elements. -->
+
+    <h1 class="heading">Heading 1</h1>
+    <h2 class="heading">Heading 2</h2>
+    <h3 class="heading">Heading 3</h3>
+    <h4 class="heading">Heading 4</h4>
+    <h5 class="heading">Heading 5</h5>
+    <h6 class="heading">Heading 6</h6>
+
+    ===== 3. ID Selector =====
+    <!-- - targets a specific element with a unique ID. Unlike classes, IDs should be unique within a page. -->
+
+    <p id="main-paragragh">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi corporis
+      fugiat non quis voluptatem molestias eaque minus dolorem ad ratione!
+    </p>
+
+    ===== 4. Attribute Selector ====
+    <!-- - targets elements based on the presence or value of an attribute. -->
+    <br />
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <br />
+
+    ===== 5. Descendant Selector(space) =====
+    <!-- - targets elements that are nested within a specified parent element, no matter how deeply nested. -->
+
+    <p>Hey There!!!</p>
+    <div>
+      <p>One</p>
+      <p>Two</p>
+      <p>Three</p>
+    </div>
+
+    ===== 6. Child Selector(>) =====
+    <!-- - targets elements that are direct children of a specified parent element. -->
+    <ul>
+      <li>Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+
+    ==== 7. Adjacent Sibling Selector(+) ====
+    <!-- - targets an element that is directly next to a specified element. -->
+
+    <h2>Adjacent</h2>
+    <p>Hello One</p>
+    <p>Hello Two</p>
+
+    ==== 8. General Sibling Selector(~) ====
+    <!-- - targets all elements that are siblings of a specified element, appearing after it. -->
+
+    <h1>Main heading</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div>
+      <p>Not Applied</p>
+    </div>
+
+    ===== 9. Pseudo-class Selector =====
+    <!-- - target elements based on their state or position in the document. -->
+    <ul>
+      <li>Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <p>Hey There</p>
+
+    ===== 10. Pseudo elements Selector =====
+    <!-- - allow you to style specific parts of an element. -->
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quod aliquid
+      ut nesciunt nihil, magnam consequatur. Nulla optio ea quaerat numquam
+      possimus consequuntur natus, sequi incidunt cupiditate odit debitis iste?
+    </p>
+
+    ===== 11. Grouping Selector(,) =====
+    <!-- - allows you to apply the same styles to multiple selectors. -->
+
+    <h1>Heading 01</h1>
+    <h2>Heading 02</h2>
+    <h3>Heading 03</h3>
+  </body>
+</html>
