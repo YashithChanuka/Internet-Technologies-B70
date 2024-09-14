@@ -1,1 +1,4 @@
 .DS_Store
+.firebase
+.firebaserc
+404.html
