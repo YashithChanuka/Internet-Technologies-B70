@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 06</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: wheat;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        position: absolute;
+      }
+      .top-left {
+        background-color: red;
+        top: 0;
+        left: 0;
+        border-bottom-right-radius: 100%;
+      }
+      .top-right {
+        background-color: greenyellow;
+        top: 0;
+        right: 0;
+        border-bottom-left-radius: 100%;
+      }
+      .bottom-right {
+        background-color: chocolate;
+        bottom: 0;
+        right: 0;
+        border-top-left-radius: 100%;
+      }
+      .bottom-left {
+        background-color: aqua;
+        bottom: 0;
+        left: 0;
+        border-top-right-radius: 100%;
+      }
+      .square {
+        background-color: magenta;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .circle {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box top-left"></div>
+    <div class="box top-right"></div>
+    <div class="box bottom-right"></div>
+    <div class="box bottom-left"></div>
+    <div class="box square"></div>
+    <div class="circle"></div>
+  </body>
+</html>
