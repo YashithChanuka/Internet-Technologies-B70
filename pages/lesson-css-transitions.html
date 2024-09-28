@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - CSS Transitions</title>
+    <style>
+      #addToCart {
+        background-color: rebeccapurple;
+        color: white;
+        border: 1px solid black;
+        padding: 12px 36px;
+        border-radius: 12px;
+      }
+      #addToCart:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+
+        /* transition-property: background-color;
+        transition-duration: 3s;
+        transition-timing-function: e;
+        transition-delay: 2s; */
+
+        transition: background-color 3s ease-in-out 2s;
+      }
+
+      /* ======= */
+
+      .image-container {
+        width: 200px;
+        height: 200px;
+        margin: 50px;
+      }
+
+      .image {
+        width: 100%;
+        transition: transform 2s ease-in-out 1s;
+      }
+
+      .image-container:hover img {
+        transform: scale(1) rotate(360deg);
+      }
+
+      /* ======= */
+
+      .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: rebeccapurple;
+
+        transition: transform 2s ease-in-out 1s,
+          background-color 2s ease-in-out 1s;
+      }
+
+      .circle:hover {
+        background-color: green;
+        transform: translateY(150px);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="addToCart">Add To Cart</button>
+    <br />
+    =======
+    <br />
+
+    <div class="image-container">
+      <img
+        class="image"
+        src="/assets/images/yellow-flowers.jpg"
+        alt="flower-image"
+      />
+    </div>
+    <br />
+    =======
+    <br />
+
+    <div class="circle"></div>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise - 07</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: wheat;
+      }
+      #logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid black;
+        margin-right: 8px;
+      }
+      #logo-container {
+        display: flex;
+      }
+      header {
+        width: 100%;
+        height: 60px;
+        background-color: #333;
+        color: wheat;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+
+      nav > ul {
+        list-style: none;
+        display: flex;
+      }
+
+      nav > ul > li {
+        margin: 0 40px;
+      }
+
+      nav > ul > li > a {
+        color: wheat;
+        text-decoration: none;
+      }
+
+      #hero-section {
+        width: 100%;
+        display: flex;
+        margin-top: 84px;
+      }
+
+      #hero-content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 60px;
+      }
+
+      #hero-image {
+        width: 50%;
+      }
+
+      #social-media-section img {
+        width: 32px;
+        height: 32px;
+        border-radius: 12px;
+        margin: 0 12px;
+      }
+
+      #more-btn {
+        background-color: #333;
+        color: wheat;
+        padding: 12px 24px;
+        border-radius: 12px;
+      }
+
+      #social-media-section {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo-container">
+        <img id="logo" src="/assets/images/prof-img.jpeg" alt="logo" />
+        <h3>Yashith Chanuka</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero-section">
+      <div id="hero-content">
+        <h1>Hey There!!! Welcome to my Portfolio.</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+          veniam odio quaerat eligendi, omnis facilis hic possimus totam animi
+          ratione ipsam ipsa necessitatibus modi sint voluptatem, vitae
+          excepturi fugiat porro temporibus aliquid pariatur numquam ipsum.
+          Magnam laborum esse, sint vitae nihil, consequatur reiciendis nam
+          tempora, nisi eius omnis similique sapiente!
+        </p>
+        <button id="more-btn">More Info</button>
+        <div id="social-media-section">
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="/assets/images/facebook.jpeg" alt="facebook" />
+          </a>
+          <img src="/assets/images/linkedin.png" alt="linkedin" />
+          <img src="/assets/images/github.png" alt="github" />
+          <img src="/assets/images/youtube.png" alt="youtube" />
+        </div>
+      </div>
+      <img id="hero-image" src="/assets/images/prof-img.jpeg" alt="" />
+    </section>
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+        eveniet optio? Adipisci, eveniet placeat veniam odio magnam voluptate ad
+        sequi temporibus possimus obcaecati accusamus neque sit eligendi, est
+        impedit odit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+        eveniet optio? Adipisci, eveniet placeat veniam odio magnam voluptate ad
+        sequi temporibus possimus obcaecati accusamus neque sit eligendi, est
+        impedit odit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+        eveniet optio? Adipisci, eveniet placeat veniam odio magnam voluptate ad
+        sequi temporibus possimus obcaecati accusamus neque sit eligendi, est
+        impedit odit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+        eveniet optio? Adipisci, eveniet placeat veniam odio magnam voluptate ad
+        sequi temporibus possimus obcaecati accusamus neque sit eligendi, est
+        impedit odit.
+      </p>
+    </section>
+  </body>
+</html>
