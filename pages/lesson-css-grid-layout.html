@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - CSS Grid Layout</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        display: grid;
+        /* grid-template-columns: 10% 20% 20% 40% 10%; */
+        /* grid-template-columns: 1fr 2fr 3fr; */
+        grid-template-columns: repeat(1, 1fr 2fr 3fr);
+
+        /* column-gap: 12px;
+        row-gap: 12px; */
+
+        gap: 12px;
+      }
+
+      .container > div {
+        border: 1px solid black;
+        background-color: antiquewhite;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat
+        dolorum deleniti hic, officia libero quaerat exercitationem distinctio
+        maxime quis necessitatibus tenetur ex eum ab, pariatur adipisci ullam
+        culpa aliquid!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat
+        dolorum deleniti hic, officia libero quaerat exercitationem distinctio
+        maxime quis necessitatibus tenetur ex eum ab, pariatur adipisci ullam
+        culpa aliquid!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat
+        dolorum deleniti hic, officia libero quaerat exercitationem distinctio
+        maxime quis necessitatibus tenetur ex eum ab, pariatur adipisci ullam
+        culpa aliquid!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat
+        dolorum deleniti hic, officia libero quaerat exercitationem distinctio
+        maxime quis necessitatibus tenetur ex eum ab, pariatur adipisci ullam
+        culpa aliquid!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat
+        dolorum deleniti hic, officia libero quaerat exercitationem distinctio
+        maxime quis necessitatibus tenetur ex eum ab, pariatur adipisci ullam
+        culpa aliquid!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat
+        dolorum deleniti hic, officia libero quaerat exercitationem distinctio
+        maxime quis necessitatibus tenetur ex eum ab, pariatur adipisci ullam
+        culpa aliquid!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat
+        dolorum deleniti hic, officia libero quaerat exercitationem distinctio
+        maxime quis necessitatibus tenetur ex eum ab, pariatur adipisci ullam
+        culpa aliquid!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat
+        dolorum deleniti hic, officia libero quaerat exercitationem distinctio
+        maxime quis necessitatibus tenetur ex eum ab, pariatur adipisci ullam
+        culpa aliquid!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat
+        dolorum deleniti hic, officia libero quaerat exercitationem distinctio
+        maxime quis necessitatibus tenetur ex eum ab, pariatur adipisci ullam
+        culpa aliquid!
+      </div>
+    </div>
+  </body>
+</html>
