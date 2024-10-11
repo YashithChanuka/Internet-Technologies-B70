@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise - 11</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        animation: go-around 4s linear infinite;
+      }
+
+      @keyframes go-around {
+        0% {
+          top: 0;
+          left: 0;
+        }
+        25% {
+          top: 0;
+          left: calc(100% - 100px);
+          /* transform: rotate(180deg); */
+        }
+        50% {
+          top: calc(100% - 100px);
+          left: calc(100% - 100px);
+          /* transform: rotate(360deg); */
+        }
+        75% {
+          top: calc(100% - 100px);
+          left: 0;
+          /* transform: rotate(180deg); */
+        }
+        100% {
+          top: 0;
+          left: 0;
+          /* transform: rotate(0deg); */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

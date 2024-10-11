@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise - 10</title>
+    <style>
+      .container {
+        background-color: azure;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .mood-box {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        /* overflow: hidden; */
+        transition: width 1s ease;
+      }
+
+      .mood-box:hover {
+        width: 200px;
+      }
+
+      .mood-emoji {
+        font-size: 40px;
+      }
+
+      .mood-box:hover .mood-emoji {
+        font-size: 32px;
+      }
+
+      .mood-name {
+        opacity: 0;
+      }
+
+      .mood-box:hover .mood-name {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mood-box">
+        <span class="mood-emoji">😁</span>
+        <span class="mood-name">Happy</span>
+      </div>
+      <div class="mood-box">
+        <span class="mood-emoji">😭</span>
+        <span class="mood-name">Crying</span>
+      </div>
+      <div class="mood-box">
+        <span class="mood-emoji">😍</span>
+        <span class="mood-name">Love</span>
+      </div>
+      <div class="mood-box">
+        <span class="mood-emoji">🤭</span>
+        <span class="mood-name">Shy</span>
+      </div>
+    </div>
+  </body>
+</html>
