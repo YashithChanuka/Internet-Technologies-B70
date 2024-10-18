@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise - 15</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 500px;
+        margin: 50px auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2,
+      p {
+        text-align: center;
+      }
+      form {
+      }
+      label {
+        display: block;
+        color: #333;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding: 8px;
+        margin-bottom: 10px;
+      }
+      input[type="submit"] {
+        background-color: green;
+        color: white;
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 4px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>If you need any help, please let us know...!!!</p>
+      <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" cols="50" rows="4"></textarea>
+
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+  </body>
+</html>
